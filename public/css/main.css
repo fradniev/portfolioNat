@@ -148,3 +148,6 @@
    left: -20px;
    transform: translateY(-50%) rotate(-45deg);
 }
+div.hov:hover {
+    font-size: 120%;
+}
