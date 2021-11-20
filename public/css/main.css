@@ -1,0 +1,150 @@
+.cv-container{
+	width: 100%;
+    display: flex;
+}
+.left-side,.right-side{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cv-contact,.educacion,.skills,.contacto,.experiencia,.software,.habilidades,.habilidades-box{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+.educacion,.skills,.experiencia,.software,.habilidades,.habilidades-box{
+	margin-top: 20px;
+}
+.cv-contact{
+	padding: 15px;
+	border-radius: 15px;
+	border: 1px solid #cbaa95;
+}
+.name{
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+.puesto,.empresa,.jefe,.numero-jefe{
+	font-size: 1rem;
+	font-weight: bold;
+}
+.title{
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	padding: 15px;
+	border: 1px solid #cbaa95;
+	border-radius: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.estudio{
+	margin-bottom: 20px;
+}
+.nombre-institucion{
+	font-weight: bold;
+}
+.habilidades{
+	width: 100%;
+	border-radius: 15px;
+	border: 1px solid #cbaa95;
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px;
+}
+.habilidad{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.habilidad:not(:last-child){
+	border-bottom: 1px solid #cbaa95;
+}
+.contacto-container,.trabajos, .trabajo{
+	padding: 15px;
+	border-radius: 15px;
+	border: 1px solid #cbaa95;
+	width: 100%;
+}
+.contacto-item{
+	width: 100%;
+	display: flex;
+	font-size: 1.2rem;
+}
+.trabajo{
+	margin-bottom: 20px;
+	background-color: #cbcfd1;
+}
+.soft{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+}
+.logo{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.software i{
+	font-size: 1.8rem;
+}
+.star-brown{
+	color: #b4784e;
+}
+.star-light{
+	color: #cda181;
+}
+.star-hollow{
+	color: #cda181;
+}
+.contacto-item .logo{
+	margin-right: 20px;
+}
+.logo-img{
+	width: 30px;
+}
+.logo-img img{
+	width: 100%;
+}
+.list-habilidades{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 100%;
+}
+.selected{
+	background: #cbaa95;
+    color: white;
+}
+#arrow {
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    width:10px;
+    height:10px;
+    transform: rotate(-45deg);
+    margin-top:40px;
+}
+.habilidades-box ul li {
+  position: relative;
+	padding-bottom: 10px;
+}
+
+.habilidades-box ul {
+  list-style: none;
+}
+
+.habilidades-box ul li:before{
+   content: '';
+   position: absolute;
+   border-right:2px solid black;
+   border-bottom:2px solid black;
+   width:10px;
+   height:10px;
+   top: calc(50% - 4px);
+   left: -20px;
+   transform: translateY(-50%) rotate(-45deg);
+}
