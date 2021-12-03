@@ -216,4 +216,12 @@ and (max-width : 768px) {
 	.contacto{
 		margin-top: 20px;
 	}
+	.project-active{
+		right: 0;
+		opacity: 1;
+		visibility: visible;
+		width: 100%;
+		position: relative;
+		top: 0;
+	}
 }
