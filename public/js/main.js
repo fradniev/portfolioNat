@@ -15,7 +15,7 @@ $( document ).ready(function() {
       $(".bi-record-fill").removeClass("bi-record-fill").addClass("bi-record")
       $(this).find(".bi").removeClass("bi-record").addClass("bi-record-fill")
     })
-    $(".main-section .title").click(function(){
-      $(this).siblings(".toHide").toggleClass("hidden-section")
+    $(".main-section").click(function(){
+      $(this).find(".toHide").toggleClass("hidden-section")
     })
 });
