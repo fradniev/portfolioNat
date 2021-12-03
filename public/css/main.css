@@ -154,9 +154,9 @@
 .project-container{
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 100%;
 	position: absolute;
-	top: 75px;
+	top: 0px;
 	opacity: 0;
 	visibility: hidden;
 	left: unset;
@@ -172,6 +172,7 @@
 .project-active{
 	right: 0;
 	opacity: 1;
+	position: relative;
 	visibility: visible;
 }
 #proyecto{
@@ -221,7 +222,6 @@ and (max-width : 768px) {
 		opacity: 1;
 		visibility: visible;
 		width: 100%;
-		position: relative;
 		top: 0;
 	}
 }
