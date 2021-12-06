@@ -7,6 +7,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 5rem;
+}
+.allOpened{
 	justify-content: space-between;
 }
 .cv-contact,.educacion,.skills,.contacto,.experiencia,.software,.habilidades,.habilidades-box{
@@ -116,6 +119,8 @@
     flex-wrap: wrap;
     height: 150px;
     width: 100%;
+    justify-content: space-between;
+    margin: 0;
 }
 .selected{
 	background: #cbaa95;
@@ -130,8 +135,8 @@
     margin-top:40px;
 }
 .habilidades-box ul li {
-  position: relative;
-	padding-bottom: 10px;
+	position: relative;
+	margin-top: 10px;
 }
 
 .habilidades-box ul {
@@ -139,15 +144,15 @@
 }
 
 .habilidades-box ul li:before{
-   content: '';
-   position: absolute;
-   border-right:2px solid black;
-   border-bottom:2px solid black;
-   width:10px;
-   height:10px;
-   top: calc(50% - 4px);
-   left: -20px;
-   transform: translateY(-50%) rotate(-45deg);
+	content: '';
+    position: absolute;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 10px;
+    height: 10px;
+    top: calc(50% + 2px);
+    left: -20px;
+    transform: translateY(-50%) rotate(-45deg);
 }
 .page-item{
 	cursor: pointer;
@@ -187,6 +192,7 @@ div.hov:hover {
 }
 .main-section .title{
 	cursor: pointer;
+	transition: .2s all;
 }
 .toHide{
 	transition: all .6s;
@@ -205,6 +211,10 @@ div.hov:hover {
 .cv-container{
 	min-height: calc(100vh - 118px);
 	overflow: hidden;
+}
+.activeTitle,.title:hover{
+	background-color: #0b6768;
+	color: white;
 }
 /* Desktops and laptops ----------- */
 @media only screen 

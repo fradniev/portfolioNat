@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+  var divsOpened=0;
     $( ".hover-proyecto" ).mouseover(function() {
       $( ".proyecto-seleccionado img" ).attr("src","/images/proyect/"+$(this).data("image"));
     });
@@ -16,6 +17,18 @@ $( document ).ready(function() {
       $(this).find(".bi").removeClass("bi-record").addClass("bi-record-fill")
     })
     $(".main-section .title").click(function(){
+      $(this).toggleClass("activeTitle");
       $(this).parent().find(".toHide").toggleClass("hidden-section")
+      if($(this).parent().find(".toHide").hasClass("hidden-section")){
+        divsOpened--;
+      } else {
+        divsOpened++;
+      }
+      console.log(divsOpened)
+      if(divsOpened==6){
+        $(".left-side,.right-side").addClass("allOpened");
+      } else if($(".left-side,.right-side").hasClass("allOpened")){
+        $(".left-side,.right-side").removeClass("allOpened");
+      }
     })
 });
