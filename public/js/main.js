@@ -81,7 +81,6 @@ $( document ).ready(function() {
   var myModal = new bootstrap.Modal(document.getElementById('main-modal'))
   $(".button-open-modal").click(function(e){
     e.preventDefault();
-    console.log("start")
     $("#imagen1").attr("src", proyectos[$(this).data("name")].image1)
     $("#imagen2").attr("src", proyectos[$(this).data("name")].image2)
     $("#imagen3").attr("src", proyectos[$(this).data("name")].image3)
@@ -90,6 +89,5 @@ $( document ).ready(function() {
     $("#actualizacion").text(proyectos[$(this).data("name")].actualizacion)
     $("#enlace").text(proyectos[$(this).data("name")].enlace)
     myModal.show();
-    console.log("finish")
   })
 });
