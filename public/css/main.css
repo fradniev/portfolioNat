@@ -216,6 +216,12 @@ div.hov:hover {
 	background-color: #0b6768;
 	color: white;
 }
+.carousel-indicators [data-bs-target]{
+	background-color: black;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	background-color: black;
+}
 /* Desktops and laptops ----------- */
 @media only screen 
 and (max-width : 768px) {
